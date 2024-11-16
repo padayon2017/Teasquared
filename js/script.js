@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (targetElement) {
                 // Calculate the position to scroll to
-                const headerOffset = 200; // Fixed header height in pixels
+                const headerOffset = 1000; // Fixed header height in pixels
                 const elementPosition = targetElement.getBoundingClientRect().top; // Get the target element position
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset; // Calculate the final position with margin
 
