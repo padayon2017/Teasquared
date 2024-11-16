@@ -149,8 +149,7 @@ align-items: center;
   background: rgba(255, 255, 255, 0.229);
   border: 1px solid #ffffff;
   box-shadow: 1px 1px 10px #ffffff, inset 1px 1px 10px #ffffff;
-  text-shadow: 1px 1px 5px #ffffff, 
-  0 0 10px #ffffff; 
+  text-shadow: 1px 1px 5px #ffffff; 
   cursor: pointer;
   text-decoration: none;
 }
