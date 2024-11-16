@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Demo Website</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+          <a href="index.html" class="logo-container" id="Logo"><img src="images/icons/logo.png" class="logo"></a>
+          <ul class="links">
+              <li class="nav-list"><a href="food.html" class="nav-a">Food</a></li>
+              <li class="nav-list"><a href="about.html" class="nav-a">About</a></li>
+              <li class="nav-list"><a href="customercare.html" class="nav-a">Customer Care</a></li>
+         </ul>
+          <div class="login"><a href="#login"><button class="btn">Login</button></a></div>
+          <div class="toggle-menu">=</div>
+
+      </nav>
+  </header>
+
+    <main id="CustomerCare" class="page">
+
+      <h1 class="page-title">Feedback</h1>
+
+
+      <div class="carecontent">
+
+
+        <div class="contact-wrapper">
+        <div class="contact-description">
+        <img src="images/icons/icons8-facebook.svg" alt="facebook" class="icons">
+        <h2 class="contacts">Facebook</h2>
+      </div>
+      <div class="contact-description">
+        <img src="images/icons/icons8-instagram.svg" alt="insta" class="icons">
+        <h2 class="contacts">Instagram</h2>
+
+      </div>
+      <div class="contact-description">
+        <img src="images/icons/icons8-phone-50.png" alt="contacts" class="icons">
+        <h2 class="contacts">09818180000</h2>
+
+      </div>
+
+      </div><!----contactdescription end here--->
+
+<div class="form-container">
+
+      <form action="/submit_form" method="post" class="form">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required class="input"><br>
+        
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required class="input"><br>
+        
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required class="input" rows="4" cols="50"></textarea><br>
+        
+        <div class="cta">
+            <input type="submit" value="Submit" class="submit">
+        </div>
+    </form>
+</div><!-----Form-container end here--->
+
+</div><!----carecontent end here---->
+    </main>
+
+    <footer>
+      ahahhahahahah
+    </footer>
+
+  </body>
+
+  
+
+</html>
