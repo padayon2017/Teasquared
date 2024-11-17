@@ -328,7 +328,6 @@ flex-direction: column;
   background: rgba(0, 0, 0, 0.53); 
   padding: 20px 5% 5% 5%;
   row-gap: 1em;
-  backdrop-filter: blur(20px);
 
 }
 
@@ -477,11 +476,90 @@ align-items: flex-start;
   cursor: pointer;
 }
 
-
 footer{
+  display: grid; 
+  grid-template-rows:max-content auto 20px;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  padding:0 5% 20px 5%;
+  height: 260px;
+  background: rgba(0, 0, 0, 0.482); /* Adjust the color and transparency (white with 50% opacity) */
+  backdrop-filter: blur(20px); /* Apply the blur effect */
+}
+
+
+.footer-social{
   display: flex;
-  background-color: red;
-  height: 200px;
+  justify-content: center;
+  align-items: start;
+  padding: 0 10%;
+}
+
+.social-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 1em;
+  background: rgba(255, 255, 255, 0.229);
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 10px #ffffff, inset 1px 1px 10px #ffffff;  
+ border-bottom-right-radius:20px ;
+ border-bottom-left-radius: 20px;
+  padding:10px 10%;
+}
+
+.social-text{
+  color: white;
+  text-shadow: 1px 1px 10px white;
+  place-self: center;
+}
+
+.social-footer{
+  display: flex;
+  gap: 1em;
+}
+
+.social-icons{
+  width: 50px;
+  display: flex;
+}
+
+.socmed-icon{
+  width: 100%;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+
+.footer-links{
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: space-evenly;
+}
+
+
+.footers{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.footer-text{
+  color: #fff;
+  font-size: 0.9em;
+  
+}
+
+.footer-reserved{
+  display: grid;
+  place-items: center;
 }
 
 .toggle-menu{
@@ -555,6 +633,12 @@ nav{
 
 .contact-wrapper{
   gap:1em;
+}
+
+
+.social-wrapper{
+  justify-content: center;
+ 
 }
 
 
@@ -634,6 +718,11 @@ iframe{
   height: 50vh;
 }
 
+
+.social-wrapper{
+  
+  padding:10px 3.5%;
+}
 
 
 }
