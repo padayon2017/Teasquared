@@ -20,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (isFoodPage) {
         // Show Ricebowl by default when the food section is opened
-        const savedSectionId = localStorage.getItem('activeSection') || defaultSectionId;
-        showSection(savedSectionId);
+        showSection(defaultSectionId);
     } else {
         // Clear the active section from localStorage when leaving the food page
         localStorage.removeItem('activeSection');
