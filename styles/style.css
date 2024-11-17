@@ -149,7 +149,7 @@ align-items: center;
   background: rgba(255, 255, 255, 0.229);
   border: 1px solid #ffffff;
   box-shadow: 1px 1px 10px #ffffff, inset 1px 1px 10px #ffffff;
-  text-shadow: 1px 1px 5px #ffffff; 
+  text-shadow: 1px 1px 10px #ffffff; 
   cursor: pointer;
   text-decoration: none;
 }
@@ -449,10 +449,10 @@ align-items: flex-start;
 
 .input_message{
   width: 100%;
-  height: 100px;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 10px;
   border: none ;
+  resize:vertical;
 }
 
 .cta{
@@ -487,7 +487,6 @@ footer{
   background: rgba(0, 0, 0, 0.482); /* Adjust the color and transparency (white with 50% opacity) */
   backdrop-filter: blur(20px); /* Apply the blur effect */
 }
-
 
 .footer-social{
   display: flex;
