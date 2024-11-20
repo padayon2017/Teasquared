@@ -160,11 +160,14 @@ align-items: center;
 backdrop-filter: blur(40px); 
 display: flex;
 flex-direction: column;
+padding:0 2%;
 }
 
 
 .productbar{
   padding: 20px 0;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -172,7 +175,9 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   column-gap: 3em;
+  flex: 1;
 }
+
 
 
 .categorie-list{
@@ -185,21 +190,33 @@ flex-direction: column;
   color: #fff;
   font-size: 1.15rem;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 0 20px;
   border-radius: 20px;
   border:1px solid #fff;
   text-shadow: 1px 1px 10px white;
   box-shadow:inset 1px 1px 20px rgb(255, 255, 255), 1px 1px 10px rgba(255, 255, 255, 0.482);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.add-to-cart{
+  display: flex;
+  align-items: center;
+}
+
+.cart{
+  width: 50px;
+  cursor: pointer;
+}
 
 .food-display{
   display: flex;
   border-radius: 20px;
-  padding:1em;
+  padding:1em 0;
   flex: 1;
-  overflow-y: auto;
+ 
 
 }
 
@@ -208,6 +225,9 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   row-gap: 1em;
+  overflow-y: auto;
+  height: 100vh;
+  
 }
 
 .titles{
@@ -225,6 +245,7 @@ flex-direction: column;
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
   row-gap: 2em;
+ 
 }
 
 .product-preview{
@@ -392,12 +413,10 @@ align-items: flex-start;
   display: inline-flex;
   flex-direction: row;
   gap: 1em;
-  box-shadow: inset 1px 1px 10px  #ffffff, 1px 1px 10px white;  ;
   background-color: #a600ff42;
   border-radius: 20px;
   width: max-content;
-  padding:2px 5px;
-  border: 1px solid white;
+  padding:2px 15px;
   backdrop-filter: blur(20px);
   
   
@@ -565,8 +584,17 @@ justify-content: space-evenly;
   display: none;
 }
 
+@media screen and (min-width:320px) and (max-width:445px){
 
-@media screen  and (max-width:768px) {
+
+
+
+}
+  
+
+
+
+@media screen and (min-width:446px) and (max-width:768px) {
    
 nav{
   justify-content: space-between;
@@ -575,7 +603,7 @@ nav{
 
 .logo-container{
  
- width: 280px;
+ width: 240px;
 }
 
   .links{
@@ -583,13 +611,18 @@ nav{
   }
   
   .login{
-    width: 0px;
+    width: 86.625px;
   }
   
   .toggle-menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30px;
+  }
+
+  .menu{
+    width: 100%;
   }
   
   .page{
@@ -597,7 +630,21 @@ nav{
     margin-top: 93.2px;
    
   }
+
+  .productbar{
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding: 20px 0 0 0;
+  }
   
+  .productbar-a{
+    padding: 10px 20px;
+  }
+
+  .add-to-cart{
+    justify-content: end;
+  }
+
   .categories{
     justify-content: space-evenly;
     column-gap: 0;
@@ -692,9 +739,11 @@ nav{
       margin-top: 189.137px;
      
     }
+
+
     
     .categories{
-      justify-content: space-evenly;
+      justify-content: space-around;
       column-gap: 0;
 
     }
