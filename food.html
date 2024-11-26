@@ -20,16 +20,28 @@
               <li class="nav-list"><a href="about.html" class="nav-a">About</a></li>
               <li class="nav-list"><a href="customercare.html" class="nav-a">Customer Care</a></li>
          </ul>
-          <div class="login"><a href="#login"><button class="btn">Login</button></a>
+          <div class="login"><button class="btn" id="showLogin">Login</button>
           </div>
-          <div class="toggle-menu">
+          <div class="toggle-menu" id="toggleMenu">
             <img src="images/icons/icons8-menu-50.png" alt="toggle-menu" class="menu">
           </div>
-
       </nav>
   </header>
 
+
+  <sidebar class="sidebar" id="sidebar">
+    <ul class="sidebar-links">
+      <li class="sidebar-list"><a href="index.html" class="sidebar-a">Home</a></li>
+      <li class="sidebar-list"><a href="food.html" class="sidebar-a">Food</a></li>
+      <li class="sidebar-list"><a href="about.html" class="sidebar-a">About</a></li>
+      <li class="sidebar-list"><a href="customercare.html" class="sidebar-a">Customer Care</a></li>
+
+    </ul>
+
+  </sidebar>
+
     <main id="food"  class="page">
+      
         <div class="productbar">
             <ul class="categories">
                 <li class="categorie-list"><a href="#Ricebowl" class="productbar-a">Rice Bowl</a></li>
@@ -37,13 +49,23 @@
                 <li class="categorie-list"><a href="#Snacks" class="productbar-a">Snacks</a></li>
                 <li class="categorie-list"><a href="#Cocktails" class="productbar-a">Cocktails</a></li>
             </ul>
-            <div class="add-to-cart">
+            <!---<div class="add-to-cart">
                 <img src="images/icons/icons8-cart-50.png" class="cart">
-
-              </div>
-
-
+              </div>---->
+            <div class="food-list" id="foodList">
+              <img src="images/icons/icons8-menu-50.png" alt="food-list" class="menu">
+            </div>
         </div>
+
+        <productbar class="productbarmenu" id="productbarmenu">
+          <ul class="productbar-links">
+            <li class="productbar-list"><a href="#Ricebowl" class="productmenu-a">Ricebowl</a></li>
+            <li class="productbar-list"><a href="#Milktea" class="productmenu-a">Milktea</a></li>
+            <li class="productbar-list"><a href="#Snacks" class="productmenu-a">Snacks</a></li>
+            <li class="productbar-list"><a href="#Cocktails" class="productmenu-a">Cocktails</a></li>
+          </ul>
+
+        </productbar>
 
 
     <div id="product-display" class="food-display">
@@ -195,11 +217,20 @@
             <button class="btn-buy">Buy Now</button>
         </div>
 
-    </div>
+        
+        <div class="product-preview">
+          <img src="images/nachos/product1.jpg" class="products">
+          <h1 class="product-title">Nachos Overload</h1>
+          <h1 class="product-price">&#8369;85</h1>
+          
+          <button class="btn-buy">Buy Now</button>
+      </div>
+  </div>
       </section>
 
-
-      <section id="Cocktails" class="product-category" >
+      
+      
+      <section id="Cocktails" class="product-category"  >
         <div class="titles">
         <h1 class="title">Cocktails</h1>
         </div>
@@ -207,27 +238,53 @@
         <div class="food-grid">
         
         <div class="product-preview">
-            <img src="images/nachos/product1.jpg" class="products">
-            <h1 class="product-title">Nachos Overload</h1>
-            <h1 class="product-price">&#8369;85</h1>
+            <img src="images/cocktails/product1.jpg" class="products">
+            <h1 class="product-title">Cocktails</h1>
+            <h1 class="product-price">&#8369;200</h1>
             
             <button class="btn-buy">Buy Now</button>
         </div>
+
+        <div class="product-preview">
+            <img src="images/cocktails/product2.jpg" class="products">
+            <h1 class="product-title">Cocktails</h1>
+            <h1 class="product-price">&#8369;200</h1>
+            
+            <button class="btn-buy">Buy Now</button>
+        </div>
+
+        
+        <div class="product-preview">
+          <img src="images/cocktails/product3.jpg" class="products">
+          <h1 class="product-title">Cocktails</h1>
+          <h1 class="product-price">&#8369;200</h1>
+          
+          <button class="btn-buy">Buy Now</button>
+      </div>
     </div>
-
       </section>
+</div>
 
 
-
-
-
-
-    </div><!---Food Display End Here!----->
-      
-</section><!----FOod Section End Here!----->
-      
 
     </main>
+
+    <div id="login" class="login-container">
+      <div class="logins">
+      <h2 class="login-text">Login</h2>
+      <img src="images/icons/cross-button.png" alt="close-button" class="close-button">
+    </div>
+      <form class="login-wrapper">
+      <input type="text" id="username" name="username" placeholder="Username" class="input-login" required>
+      <input type="password" id="password" name="password" placeholder="Password" class="input-login" required>
+      <div class="submit-wrapper">
+      <input type="submit" value="Login" class="submit-login">
+    </div>
+      </form>
+    </div>
+    
+
+      
 
     
     <footer>
