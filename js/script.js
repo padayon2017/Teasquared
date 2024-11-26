@@ -56,3 +56,52 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('showLogin')
+.addEventListener('click',
+    function(){
+
+document.getElementById('login').style.display = 'grid';
+});
+
+
+document.addEventListener('click',
+    function(event) {
+        if
+    (event.target.classList.contains('close-button')) {
+        document.getElementById('login').style.display = 'none';
+    }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleMenu = document.getElementById('toggleMenu');
+        const sidebar = document.getElementById('sidebar');
+    
+        toggleMenu.addEventListener('click', function() {
+            sidebar.classList.toggle('active'); // Toggle the 'active' class on the links
+        });
+    
+        // Optional: Close the menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!toggleMenu.contains(event.target) && !sidebar.contains(event.target)) {
+                sidebar.classList.remove('active'); // Remove active class if clicking outside
+            }
+        });
+    });
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const foodList = document.getElementById('foodList');
+        const productbarmenu = document.getElementById('productbarmenu');
+    
+        foodList.addEventListener('click', function() {
+            productbarmenu.classList.toggle('active'); // Toggle the 'active' class on the links
+        });
+    
+        // Optional: Close the menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!foodList.contains(event.target) && !productbarmenu.contains(event.target)) {
+                productbarmenu.classList.remove('active'); // Remove active class if clicking outside
+            }
+        });
+    });
