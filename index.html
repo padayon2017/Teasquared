@@ -20,23 +20,48 @@
               <li class="nav-list"><a href="about.html" class="nav-a">About</a></li>
               <li class="nav-list"><a href="customercare.html" class="nav-a">Customer Care</a></li>
          </ul>
-          <div class="login"><a href="#login"><button class="btn">Login</button></a>
+          <div class="login"><button class="btn" id="showLogin">Login</button>
           </div>
-          <div class="toggle-menu">
+          <div class="toggle-menu" id="toggleMenu">
             <img src="images/icons/icons8-menu-50.png" alt="toggle-menu" class="menu">
           </div>
       </nav>
   </header>
 
+  <sidebar class="sidebar" id="sidebar">
+    <ul class="sidebar-links">
+      <li class="sidebar-list"><a href="index.html" class="sidebar-a">Home</a></li>
+      <li class="sidebar-list"><a href="food.html" class="sidebar-a">Food</a></li>
+      <li class="sidebar-list"><a href="about.html" class="sidebar-a">About</a></li>
+      <li class="sidebar-list"><a href="customercare.html" class="sidebar-a">Customer Care</a></li>
+    </ul>
+  </sidebar>
 
     <main id="home" class="page">
         <div class="home-preview">
         <h1 class="home-text">More than just a restobar, It's an experience.</h1>
         <a href="food.html" class="btn-menu">Order Now !</a>
         </div>  
-      
 
     </main>
+
+    
+    <div id="login" class="login-container">
+      <div class="logins">
+      <h2 class="login-text">Login</h2>
+      <img src="images/icons/cross-button.png" alt="close-button" class="close-button">
+    </div>
+      <form class="login-wrapper">
+      <input type="text" id="username" name="username" placeholder="Username" class="input-login" required>
+      <input type="password" id="password" name="password" placeholder="Password" class="input-login" required>
+      <div class="submit-wrapper">
+      <input type="submit" value="Login" class="submit-login">
+    </div>
+      </form>
+    </div>
+    
+
+ 
 
     <footer>
       <div class="footer-social">
@@ -65,6 +90,9 @@
       <a href="about.html" class="footers">About Us</a>
       <a href="customercare.html" class="footers">Contact Us</a>
      </div><!-----Footer Links End--->
+
+
+     </div>
     
      </div><!----Footer Container End---->
      <div class="footer-reserved">
