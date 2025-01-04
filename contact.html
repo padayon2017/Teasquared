@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!----  <link rel="icon" type="images/png" href="images/icons/favicon.jpg"> Add your favicon here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>TEA Sqaured</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo-container"><img src="images/icons/logo.jpg" alt="logo" class="logo"></a>
+      <ul class="nav-ul">
+        <li class="nav-li"><a href="index.html" class="nav-a">Home</a></li>
+        <li class="nav-li"><a href="products.html" class="nav-a">Products</a></li>
+        <li class="nav-li"><a href="about.html" class="nav-a">About</a></li>
+        <li class="nav-li"><a href="gallery.html" class="nav-a">Gallery</a></li>
+        <li class="nav-li"><a href="contact.html" class="nav-a">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contact" class="page">
+    <div class="contact-title">
+      <h1 class="contact">Contact</h1>
+    </div>
+    <div class="contact-container">
+    <div class="contact-info">
+      <div class="info-container">
+        <div class="info-wrapper">
+          <div class="details-container">
+            <div class="details-wrapper">
+              <a href="https://www.facebook.com/teasquaredt2" class="icons-links">
+                <img src="images/icons/icons8-facebook.svg" alt="facebook" class="icons">
+              </a>
+              <h1 class="details">TEA Squared</h1>
+            </div>
+            <div class="details-wrapper">
+              <a href="https://www.instagram.com/tea_squaredph/" class="icons-links">
+                <img src="images/icons/icons8-instagram.svg" alt="instagram" class="icons">
+              </a>
+              <h1 class="details">tea_squaredph</h1>
+            </div>
+            <div class="details-wrapper">
+              <img src="images/icons/icons8-phone-50.png" alt="phone" class="icons">
+              <h1 class="details">0930 198 2900</h1>
+            </div>
+          </div>
+
+          <div class="loc-container">
+            <div class="details-wrapper">
+              <a href="https://maps.app.goo.gl/MD8CzzZNZYzq5pT17" class="icons-links">
+                <img src="images/icons/icons8-location-50.png" alt="location" class="icons">
+              </a>
+              <h1 class="loc-details">Legazpi Street, Roxas City, Capiz</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5554240411584!2d122.75341257481747!3d11.583694988618458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5f36cdb8c753f%3A0x9bb8271a210d7dce!2sTea%20Squared%20Cafe!5e0!3m2!1sen!2sph!4v1735440623381!5m2!1sen!2sph"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            class="map"></iframe>
+        </div>
+    </div>
+
+    <div class="form-container">
+      <form action="https://formspree.io/f/mqaabykl" method="POST" class="form">
+        <h1 class="reservation">Reservation</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required class="input" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required class="input" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required class="input-message" placeholder="Your Message"></textarea>
+
+        <label for="reservation-date">Reservation Date:</label>
+        <input type="date" id="reservation-date" name="reservation-date" required class="date">
+
+        <label for="reservation-time">Reservation Time:</label>
+        <input type="time" id="reservation-time" name="reservation-time" required class="time">
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required class="no-guests">
+          <option value="" disabled selected>Select number of guests</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18+">18+</option>
+        </select>
+
+
+        <input type="submit" name="submit" value="Send Reservation" class="submit">
+      </form>
+    </div>
+
+  </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
