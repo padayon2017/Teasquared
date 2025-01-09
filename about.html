@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!----  <link rel="icon" type="images/png" href="images/icons/favicon.jpg"> Add your favicon here -->
+  <link rel="icon" type="image/png" href="images/icons/favicon.png">  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <title>TEA Sqaured</title>
 </head>
@@ -23,18 +26,31 @@
         <li class="nav-li"><a href="gallery.html" class="nav-a">Gallery</a></li>
         <li class="nav-li"><a href="contact.html" class="nav-a">Contact</a></li>
       </ul>
+      <div class="toggle-container">
+        <img src="images/icons/icons8-menu-50.png" alt="menu button" class="menu-btn">
+        <div class="sidebar-container">
+          <ul class="sidebar-ul">
+            <li class="sidebar-li"><a href="index.html" class="sidebar-a">Home</a></li>
+            <li class="sidebar-li"><a href="products.html" class="sidebar-a">Products</a></li>
+            <li class="sidebar-li"><a href="about.html" class="sidebar-a">About</a></li>
+            <li class="sidebar-li"><a href="gallery.html" class="sidebar-a">Gallery</a></li>
+            <li class="sidebar-li"><a href="contact.html" class="sidebar-a">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main id="about" class="page">
     <div class="about-us-title">
-      <h1 class="about-us">About Us</h1>
+      <h1 class="about-us">Our History</h1>
     </div>
     <div class="about-container">
       <div class="about-wrapper">
         <div class="img-container">
-          <img src="images/brand/ts.jpg" alt="" class="resto">
+          <img src="images/brand/3.jpg" alt="" class="resto">
         </div>
+        <div class="description-wrapper">
         <p class="about-p">TEA Squared is a cafe that offers a selection of drinks and food, it is located at Legaspi
           Street, Roxas City. TEA Squared increasingly offers milktea, coffee and variety of bistro food. It started
           with
@@ -47,11 +63,12 @@
           still
           operates with high standards providing quality drinks and superior service in a clean, chill and cozy ambience
           at a great value.</p>
+        </div>
       </div>
 
       <div class="about-wrapper2">
         <div class="img-container2">
-          <img src="images/brand/tsquared.jpg" alt="" class="resto2">
+          <img src="images/brand/2.jpg" alt="" class="resto2">
         </div>
         <div class="text-container">
           <div class="text-wrapper">
@@ -68,11 +85,35 @@
         </div><!---text container end-->
       </div><!---wrapper2 end-->
     </div><!---container end-->
+  </main>
 
-    <footer>
 
-    </footer>
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/teasquaredt2" class="icons-link" target="_blank">
+      <img src="images/icons/facebook.png" alt="facebook" class="icons">
+      </a>
+      <a href="https://www.instagram.com/tea_squaredph/" class="icons-link" target="_blank">
+      <img src="images/icons/instagram.png" alt="instagram" class="icons">
+      </a>
+      <a href="mailto:teasquared2007@gmail.com" class="icons-link" >
+      <img src="images/icons/mail.png" alt="email" class="icons">
+      </a>
+    </div>
+    <div class="footer">
+      <div class="footer-members">
+        <p class="footer-text">JAY ANN BACANTO,</p>
+        <p class="footer-text">JAY R DINALO,</p>
+        <p class="footer-text">JESSA MAE BILLOSO,</p>
+        <p class="footer-text">JOANA MARIE UTINAS,</p>
+        <p class="footer-text">MICCA ROLLEPA.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-text">All Rights Reserved 2025</p>
+    </div>
+  </footer>
 
 </body>
-
+<script src="js/toggle.js"></script>
 </html>
