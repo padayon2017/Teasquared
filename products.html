@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!----  <link rel="icon" type="images/png" href="images/icons/favicon.jpg"> Add your favicon here -->
+  <link rel="icon" type="image/png" href="images/icons/favicon.png">  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <title>TEA Sqaured</title>
 </head>
@@ -23,19 +26,25 @@
         <li class="nav-li"><a href="gallery.html" class="nav-a">Gallery</a></li>
         <li class="nav-li"><a href="contact.html" class="nav-a">Contact</a></li>
       </ul>
+      <div class="toggle-container">
+        <img src="images/icons/icons8-menu-50.png" alt="menu button" class="menu-btn">
+        <div class="sidebar-container">
+          <ul class="sidebar-ul">
+            <li class="sidebar-li"><a href="index.html" class="sidebar-a">Home</a></li>
+            <li class="sidebar-li"><a href="products.html" class="sidebar-a">Products</a></li>
+            <li class="sidebar-li"><a href="about.html" class="sidebar-a">About</a></li>
+            <li class="sidebar-li"><a href="gallery.html" class="sidebar-a">Gallery</a></li>
+            <li class="sidebar-li"><a href="contact.html" class="sidebar-a">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+  
 
   <main id="products" class="page">
     <div class="products-container">
-      <div class="products-sidebar">
-        <ul class="products-ul">
-          <li class="products-li"><a href="#ricebowls" class="products-a">Rice Bowls</a></li>
-          <li class="products-li"><a href="#snacks" class="products-a">Snacks</a></li>
-          <li class="products-li"><a href="#milktea" class="products-a">Milk Tea</a></li>
-          <li class="products-li"><a href="#cocktails" class="products-a">Cocktails</a></li>
-        </ul>
-      </div>
+      
       <section id="ricebowls" class="products-category"><!---Rice Bowls Section-->
         <div class="products-title">
           <h1 class="products-title-text">Rice Bowls</h1>
@@ -44,31 +53,41 @@
           <div class="products-preview">
             <img src="images/ricebowls/product1.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Shanghai</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Pork Lumpia, and Cucumber with Rice.</p>
+              <h1 class="product-price">&#8369;85</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/ricebowls/product2.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Fried Siomai Rice</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Fried Pork Siomai, with Rice.</p>
+              <h1 class="product-price">&#8369;85</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/ricebowls/product3.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Chicken Pastil</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Chicken, Chili, Cucumber with Rice.</p>
+              <h1 class="product-price">&#8369;85</h1>
             </div>
           </div>
+
+          
+          <div class="products-preview">
+            <img src="images/ricebowls/product4.jpg" alt="products" class="products">
+            <div class="product-details">
+              <p class="product-description">Steamed Pork Siomai with Rice.</p>
+              <h1 class="product-price">&#8369;85</h1>
+            </div>
+          </div>
+
 
         </div><!--Products Grid Ending-->
       </section><!---Rice Bowls Section Ending-->
 
-      <section id="snacks" class="products-category" style="display: none;"><!---Snacks Section-->
+      <section id="snacks" class="products-category"><!---Snacks Section-->
         <div class="products-title">
           <h1 class="products-title-text">Snacks</h1>
         </div>
@@ -76,16 +95,16 @@
           <div class="products-preview">
             <img src="images/snacks/product1.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Nachos Overload</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Tortilla Chips, Cheese Sauce, Shredded Cheese, Ground Meat, Diced Tomatoes, Sliced Green Onions.</p>
+              <h1 class="product-price">&#8369;105</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/snacks/product2.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Chicken Burger</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Bun, Fried Chicken Fillet, Lettuce, Cheese and Pickles</p>
+              <h1 class="product-price">&#8369;115</h1>
             </div>
 
           </div>
@@ -93,15 +112,24 @@
           <div class="products-preview">
             <img src="images/snacks/product3.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Beef Burger</h1>
-              <p class="product-price">&#8369;85</p>
+              <p class="product-description">Bun, Beef Patty, Cheese, Lettuce, Tomato, Sauce</p>
+              <h1 class="product-price">&#8369;160</h1>
+            </div>
+          </div>
+
+          
+          <div class="products-preview">
+            <img src="images/snacks/product4.jpg" alt="products" class="products">
+            <div class="product-details">
+              <p class="product-description">Chicken Wings, with French fries</p>
+              <h1 class="product-price">&#8369;115</h1>
             </div>
           </div>
 
         </div><!--Products Grid Ending-->
       </section><!---Snacks Section Ending-->
 
-      <section id="milktea" class="products-category" style="display: none;"><!---Milktea Section-->
+      <section id="milktea" class="products-category"><!---Milktea Section-->
         <div class="products-title">
           <h1 class="products-title-text">Milk Tea</h1>
         </div>
@@ -109,47 +137,66 @@
           <div class="products-preview">
             <img src="images/milktea/product1.png" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Okinawa</h1>
-              <p class="product-price">&#8369;95</p>
+              <p class="product-description">Milktea, Dark Brown Jelly cubes</p>
+              <h1 class="product-price">&#8369;95</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/milktea/product2.png" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Winter Oreo</h1>
-              <p class="product-price">&#8369;95</p>
+              <p class="product-description"> Tapioca pearls, Crushed Oreo cookies</p>
+               
+              <h1 class="product-price">&#8369;95</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/milktea/product3.png" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">CC Oreo</h1>
-              <p class="product-price">&#8369;95</p>
+              <p class="product-description">Crushed Oreo Cookies, Tapioca Pearls</p>
+
+              <h1 class="product-price">&#8369;95</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/milktea/product4.png" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Dark Choco</h1>
-              <p class="product-price">&#8369;95</p>
+              <p class="product-description">Chocolate Powder, Chocolate Syrup</p>
+              <h1 class="product-price">&#8369;95</h1>
+            </div>
+          </div>
+
+          <div class="products-preview">
+            <img src="images/milktea/product5.png" alt="products" class="products">
+            <div class="product-details">
+              <p class="product-description">Green Apple Tea, Nutella</p>
+              <h1 class="product-price">&#8369;95</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/milktea/product6.png" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Nutella</h1>
-              <p class="product-price">&#8369;95</p>
+              <p class="product-description">Nutella, Tapioca Pearls</p>
+              <h1 class="product-price">&#8369;95</h1>
+            </div>
+          </div>
+
+          
+          <div class="products-preview">
+            <img src="images/milktea/product7.png" alt="products" class="products">
+            <div class="product-details">
+              <p class="product-description">Milk, Matcha Powder</p>
+              <h1 class="product-price">&#8369;95</h1>
             </div>
           </div>
 
         </div><!--Products Grid Ending-->
       </section><!---Milktea Section Ending-->
 
-      <section id="cocktails" class="products-category" style="display: none;"><!---Cocktails Section-->
+      <section id="cocktails" class="products-category"><!---Cocktails Section-->
         <div class="products-title">
           <h1 class="products-title-text">Cocktails</h1>
         </div>
@@ -157,38 +204,66 @@
           <div class="products-preview">
             <img src="images/cocktails/product1.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Cocktails</h1>
-              <p class="product-price">&#8369;200</p>
+              <p class="product-description">Orange, Pineapple</p>
+              <h1 class="product-price">&#8369;110</h1>
             </div>
           </div>
 
           <div class="products-preview">
             <img src="images/cocktails/product2.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Cocktails</h1>
-              <p class="product-price">&#8369;200</p>
+              <p class="product-description">Grape Berry</p>
+              <h1 class="product-price">&#8369;110</h1>
             </div>
           </div>
 
+        
           <div class="products-preview">
             <img src="images/cocktails/product3.jpg" alt="products" class="products">
             <div class="product-details">
-              <h1 class="product-name">Cocktails</h1>
-              <p class="product-price">&#8369;200</p>
+              <p class="product-description">Green Tea and Orange</p>
+              <h1 class="product-price">&#8369;110</h1>
             </div>
           </div>
+          
 
         </div><!--Products Grid Ending-->
 
       </section><!---Cocktails Section Ending-->
 
     </div><!----Products Container Ending-->
+    
   </main>
 
+  
   <footer>
-
+    <div class="footer-icons">
+      <a href="https://www.facebook.com/teasquaredt2" class="icons-link" target="_blank">
+      <img src="images/icons/facebook.png" alt="facebook" class="icons">
+      </a>
+      <a href="https://www.instagram.com/tea_squaredph/" class="icons-link" target="_blank">
+      <img src="images/icons/instagram.png" alt="instagram" class="icons">
+      </a>
+      <a href="mailto:teasquared2007@gmail.com" class="icons-link" >
+      <img src="images/icons/mail.png" alt="email" class="icons">
+      </a>
+    </div>
+    <div class="footer">
+      <div class="footer-members">
+        <p class="footer-text">JAY ANN BACANTO,</p>
+        <p class="footer-text">JAY R DINALO,</p>
+        <p class="footer-text">JESSA MAE BILLOSO,</p>
+        <p class="footer-text">JOANA MARIE UTINAS,</p>
+        <p class="footer-text">MICCA ROLLEPA.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-text">All Rights Reserved 2025</p>
+    </div>
   </footer>
-</body>
-<script src="js/script.js"></script>
 
+
+</body>
+<script src="js/expand.js"></script>
+<script src="js/toggle.js"></script>
 </html>
