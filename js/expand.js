@@ -1,5 +1,5 @@
 // Get all images on the product and gallery pages
-const images = document.querySelectorAll('.highlights-wrapper img, .products-preview img, .loc-description img');
+const images = document.querySelectorAll('.highlights-wrapper img, .products-preview img, .store img');
 
 // Add event listener to each image
 images.forEach((image) => {
