@@ -236,10 +236,11 @@ nav{
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.452);
   transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
 }
+
+
 .products-preview:hover {
   transform: scale(1.1); /* Zoom in by 10% */
 }
-
 
 .product-details{
 width: 100%;
@@ -1227,6 +1228,10 @@ font-size: 14px;
   font-size: 26px;
 }
 
+.shop-container{
+  grid-template-columns: repeat(2,1fr);
+  place-content: center;
+}
 
 
 }
@@ -1282,7 +1287,11 @@ font-size: 14px;
 }
 
 .gallery-container{
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(2,1fr);
+}
+
+.highlights-container{
+  height: 100%;
 }
 
 #contact{
