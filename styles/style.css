@@ -180,6 +180,7 @@ nav{
   padding: 20px 20px 50px 20px;
   min-height: 100vh;
   flex-direction: column;
+  display: flex;
 }
 
 .products{
@@ -560,7 +561,7 @@ text-indent: 60px;
 
 .shop-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+  grid-template-columns: repeat(3,1fr);
   gap: 16px;
 }
 
