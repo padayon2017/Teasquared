@@ -530,6 +530,7 @@ a{
     transform: translateX(-50%);
     padding: 20px;
     text-align: center;
+    width: 50%;
   }
   .box-img{
     top: 250px;
