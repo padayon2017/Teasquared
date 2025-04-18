@@ -530,17 +530,18 @@ a{
     transform: translateX(-50%);
     padding: 20px;
     text-align: center;
-    width: 50%;
+    width: 250px;
     top: 50px;
+    font-size: 24px;
   }
   .box-img{
-    top: 230px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);  
     width: 300px;
   }
   .click{
-    top:570px ;
+    top:500px ;
   }
   .abt-info{
     font-size: 16px;
