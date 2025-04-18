@@ -1,192 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="images/icons/favicon1.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>TEA Sqaured</title>
+  <link rel="icon" type="image/png" href="image/favicons1.png">  
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
 </head>
-
 <body>
   <header>
+    <a href="index.html" class="logo">Ana Rose Ducanes</a>
     <nav>
-      <a href="index.html" class="logo-container"><img src="images/icons/logo.jpg" alt="logo" class="logo"></a>
-      <ul class="nav-ul">
-        <li class="nav-li"><a href="index.html" class="nav-a">Home</a></li>
-        <li class="nav-li"><a href="products.html" class="nav-a">Products</a></li>
-        <li class="nav-li"><a href="about.html" class="nav-a">About</a></li>
-        <li class="nav-li"><a href="gallery.html" class="nav-a">Gallery</a></li>
-        <li class="nav-li"><a href="contact.html" class="nav-a">Contact</a></li>
+      <ul>
+        <li>
+          <a href="index.html" class="links">Home</a>
+          <a href="about.html" class="links">About</a>
+          <a href="gallery.html" class="links">Gallery</a>
+          <a href="contact.html" class="links">Contact</a>
+        </li>
       </ul>
-      <div class="toggle-container">
-        <img src="images/icons/icons8-menu-50.png" alt="menu button" class="menu-btn">
-        <div class="sidebar-container">
-          <ul class="sidebar-ul">
-            <li class="sidebar-li"><a href="index.html" class="sidebar-a">Home</a></li>
-            <li class="sidebar-li"><a href="products.html" class="sidebar-a">Products</a></li>
-            <li class="sidebar-li"><a href="about.html" class="sidebar-a">About</a></li>
-            <li class="sidebar-li"><a href="gallery.html" class="sidebar-a">Gallery</a></li>
-            <li class="sidebar-li"><a href="contact.html" class="sidebar-a">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      <img src="image/menu-bar.png" alt="" class="toggle-menu">
     </nav>
   </header>
-
-  <main id="contact" class="page">
-
-    <div class="contact-wrapper">
-      <div class="contact-container">
-        <div class="contact-title">
+  <main>
+    <div id="content">
+      <div class="nested-menu">
+        <a href="index.html" class="nested-links">Home</a>
+        <a href="about.html" class="nested-links">About</a>
+        <a href="gallery.html" class="nested-links">Gallery</a>
+        <a href="contact.html" class="nested-links">Contact</a>
+      </div>
           <h1 class="contact">Contact</h1>
-        </div>
-        <div class="info-container">
-
-
-          <div class="details-wrapper">
-            <a href="https://www.facebook.com/teasquaredt2" class="icons-link">
-              <img src="images/icons/icons8-facebook.svg" alt="facebook" class="icons">
-            </a>
-            <h1 class="details">TEA Squared</h1>
+          <form class="contact-form" action="https://formspree.io/f/mkgjlqan"
+          method="POST">
+            <h2>Contact Me</h2>
+            
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+        
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+        
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+            <button type="submit">Send Message</button>
+          </form>
+          <div class="socmed-container">
+            <a href="https://www.facebook.com/anarose.ballera.1" class="icons-link"><img src="image/fb.png" alt="" class="icons"></a>
+            <a href="https://www.instagram.com/xqxz_i19/profilecard/?igsh=MW4zMHZzOHV5NXhmbg%3D%3D" class="icons-link"><img src="image/ig.png" alt="" class="icons"></a>
           </div>
 
-
-
-          <div class="details-wrapper">
-            <a href="" class="icons-link">
-            <img src="images/icons/icons8-phone-50.png" alt="phone" class="icons">
-          </a>
-            <h1 class="details">0930 198 2900</h1>
-          </div>
-
-
-          <div class="details-wrapper">
-            <a href="https://www.instagram.com/tea_squaredph/" class="icons-link">
-              <img src="images/icons/icons8-instagram.svg" alt="instagram" class="icons">
-            </a>
-            <h1 class="details">tea_squaredph</h1>
-          </div>
-
-
-          <div class="details-wrapper">
-            <a href="https://maps.app.goo.gl/MD8CzzZNZYzq5pT17" class="icons-link" target="_blank">
-              <img src="images/icons/icons8-location-50.png" alt="location" class="icons">
-            </a>
-            <h1 class="details">Legazpi Street, Roxas City, Capiz</h1>
-          </div>
-
-          <div class="loc-title">
-            <h1 class="contact">Location</h1>
-          </div>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5554240411584!2d122.75341257481747!3d11.583694988618458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5f36cdb8c753f%3A0x9bb8271a210d7dce!2sTea%20Squared%20Cafe!5e0!3m2!1sen!2sph!4v1735440623381!5m2!1sen!2sph"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            class="map"></iframe>
-        </div>
-      </div>
-
-      <div class="form-container">
-        <form action="https://formspree.io/f/mqaabykl" method="POST" class="form">
-          <h1 class="reservation">Reservation for Table</h1>
-
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required class="input" placeholder="Enter your name">
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required class="input" placeholder="Enter your email">
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required class="input-message"
-            placeholder="Your Message"></textarea>
-
-          <label for="reservation-date">Reservation Date & Time:</label>
-          <input type="datetime-local" id="reservation-date" name="reservation-date-time" required class="date">
-
-
-          <label for="guests">Number of Guests:</label>
-          <select id="guests" name="guests" required class="no-guests">
-            <option value="" disabled selected>Select number of guests</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18+">18+</option>
-          </select>
-
-
-          <input type="submit" name="submit" value="Send Reservation" class="submit">
-        </form>
-      </div>
-    </div>
-    <div class="shop-container">
-      <div class="store">
-        <h1 class="loc-text">Outside View</h1>
-        <img src="images/brand/1.jpg" alt="" class="bg">
-      </div>
-      <div class="store">
-        <h1 class="loc-text">Morning Inside View</h1>
-        <img src="images/brand/0.jpg" alt="" class="bg">
-      </div>
-      <div class="store">
-        <h1 class="loc-text">Night Time Inside View</h1>
-        <img src="images/brand/3.jpg" alt="" class="bg">
-      </div>
+          <img id="playPauseBtn" src="image/play.png" alt="Play/Pause">
+         
     </div>
   </main>
 
-
   <footer>
-    <div class="footer-icons">
-      <a href="https://www.facebook.com/teasquaredt2" class="icons-link" target="_blank">
-      <img src="images/icons/facebook.png" alt="facebook" class="icons">
-      </a>
-      <a href="https://www.instagram.com/tea_squaredph/" class="icons-link" target="_blank">
-      <img src="images/icons/instagram.png" alt="instagram" class="icons">
-      </a>
-      <a href="mailto:teasquared2007@gmail.com" class="icons-link">
-      <img src="images/icons/mail.png" alt="email" class="icons">
-      </a>
+    <div class="quickLinks-container">
+      <p>Quick Links</p>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="footer">
-      <div class="footer-members">
-        <p class="footer-text">JAY ANN BACANTO,</p>
-        <p class="footer-text">JAY R DINALO,</p>
-        <p class="footer-text">JESSA MAE BILLOSO,</p>
-        <p class="footer-text">JOANA MARIE UTINAS,</p>
-        <p class="footer-text">MICCA ROLLEPA.</p>
-      </div>
+    <div class="owner">
+      <p>Web Developer | Ana Rose Ducanes</p>
+      <p>My Facebook <a href="https://www.facebook.com/anarose.ballera.1" class="fblink">Ana Rose Ducanes</a></p>
     </div>
-    <div class="footer">
-      <p class="footer-text">All Rights Reserved 2025</p>
+    <div class="footericonscont">
+      <a href="https://www.facebook.com/anarose.ballera.1" class="icons-link"><img src="image/fb1.png" alt="" class="footer-icons"></a>
+      <a href="https://www.instagram.com/xqxz_i19/profilecard/?igsh=MW4zMHZzOHV5NXhmbg%3D%3D" class="icons-link"><img src="image/ig1.png" alt="" class="footer-icons"></a>
     </div>
   </footer>
-
-
 </body>
-<script src="js/toggle.js"></script>
-<script src="js/expand.js"></script>
+<script src="music.js"></script>
+<script src="toggle.js"></script>
+
 </html>
