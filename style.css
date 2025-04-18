@@ -86,6 +86,7 @@ li{
 
 #playPauseBtn {
   position: fixed;
+  z-index: 100000000000000000;
   left: 1%;
   top: 50%;
   width: 60px;
