@@ -486,7 +486,7 @@ a{
 /* Media queries */
 @media(max-width:900.9px){
   .logo{
-    font-size: 28px;
+    font-size: 26px;
   }
   ul{
     display: none;
