@@ -522,7 +522,10 @@ a{
     transform: translateX(0);
   }
   
- 
+ .nested-links:hover{
+    color: #ff00d9;
+    transform: scale(1.05);
+ }
   
   
 
