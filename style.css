@@ -10,8 +10,22 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(to right, #4b0057, #7e1e9c, #b266ff);
+  background: linear-gradient(45deg, #8A2BE2, #FF69B4, #800080, #4B0082);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 header{
   position: sticky;
   top: 0;
@@ -20,10 +34,13 @@ header{
   height: 60px;
   display: flex;
   flex-direction: row;
-  background:#4b0057;
   z-index: 1000;
   align-items: center;
   padding: 10px;
+  background-color: rgba(128, 0, 128, 0.7); /* Semi-transparent purple (adjust alpha value for transparency) */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  /* Add other header styles as needed (e.g., padding, position: fixed, width: 100%) */
 }
 .logo{
   text-decoration: none;
@@ -450,11 +467,14 @@ main{
 footer{
   height: max-content;
   padding: 10px;
-  background: linear-gradient(to top, #4b0057, #7d077d);
   color: whitesmoke;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  /* Add other header styles as needed (e.g., padding, position: fixed, width: 100%) */
 }
 .quickLinks-container{
   display: flex;
