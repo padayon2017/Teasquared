@@ -247,9 +247,8 @@ main{
   right: 100px;
   width: 400px;
   border-radius: 50%;
-  background-color: #7d077d;
+  background-color: transparent;
   z-index: 1;
-  box-shadow: 0 0 20px #7d077d;
   animation: purpleGlow 1s ease-in-out infinite;
 }
 
