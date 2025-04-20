@@ -73,9 +73,8 @@ header{
   z-index: 1000;
   align-items: center;
   padding: 10px;
-  background-color: rgba(128, 0, 128, 0.7);
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); 
+  background-color: rgb(128, 0, 128);
+ 
 }
 .logo{
   text-decoration: none;
@@ -270,8 +269,6 @@ main{
 }
 
 
-
-
 .me{
   width: 100%;
   height: auto;
@@ -421,6 +418,8 @@ main{
   height: 30px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
+  background-color: transparent;
+  color: whitesmoke;
   border-radius: 6px;
   resize: none;
   font-size: 16px;
@@ -564,6 +563,9 @@ a{
     display: block;
     width: 50px;
     cursor: pointer;
+  }
+  .toggle-menu:hover{
+      filter: invert(43%) sepia(98%) saturate(2678%) hue-rotate(293deg) brightness(118%) contrast(298%);
   }
   .nested-menu {
     position: fixed;
