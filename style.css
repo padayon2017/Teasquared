@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   font-family: Arial;
+  scrollbar-color: rgba(255, 0, 217, 0.785) #f0f0f0;
+  scrollbar-width: thin;
 }
 html{
   min-height: 100vh;
@@ -13,7 +15,28 @@ body{
   background: linear-gradient(45deg, #8A2BE2, #FF69B4, #800080, #4B0082);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
+  cursor: none;
 }
+#neon-cursor {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px; 
+  background-color:magenta; 
+  border-radius: 50%; 
+  pointer-events: none; 
+  z-index: 999999999999999999999999999999999999;
+  transform: translate(-50%, -50%); 
+  box-shadow:
+    0 0 5px rgb(255, 0, 187),
+    0 0 10px rgb(251, 0, 255),
+    0 0 20px rgb(217, 0, 255),
+    0 0 30px rgb(255, 255, 255);
+  transition: opacity 0.2s ease-in-out; 
+  opacity: 0;
+}
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -25,6 +48,19 @@ body{
     background-position: 0% 50%;
   }
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 0, 217, 0.785);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
 
 header{
   position: sticky;
@@ -37,10 +73,9 @@ header{
   z-index: 1000;
   align-items: center;
   padding: 10px;
-  background-color: rgba(128, 0, 128, 0.7); /* Semi-transparent purple (adjust alpha value for transparency) */
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  /* Add other header styles as needed (e.g., padding, position: fixed, width: 100%) */
+  background-color: rgba(128, 0, 128, 0.7);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
 }
 .logo{
   text-decoration: none;
@@ -216,7 +251,7 @@ main{
   background-color: #7d077d;
   z-index: 1;
   box-shadow: 0 0 20px #7d077d;
-  animation: purpleGlow 4s ease-in-out infinite;
+  animation: purpleGlow 1s ease-in-out infinite;
 }
 
 @keyframes purpleGlow {
@@ -471,10 +506,9 @@ footer{
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
-  backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  /* Add other header styles as needed (e.g., padding, position: fixed, width: 100%) */
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
 }
 .quickLinks-container{
   display: flex;
@@ -486,6 +520,9 @@ a{
   text-decoration: none;
   color: whitesmoke;
 }
+.quicklinks:hover{
+  color: #ff00d9;
+}
 .owner{
   display: flex;
   flex-direction: column;
@@ -493,6 +530,9 @@ a{
 }
 .fblink{
   text-decoration:underline;
+}
+.fblink:hover{
+  color: #ff00d9;
 }
 .footericonscont{
   display: flex;
@@ -504,6 +544,10 @@ a{
 .footer-icons{
   width: 50px;
 }
+.footer-icons:hover{
+  filter: invert(43%) sepia(98%) saturate(2678%) hue-rotate(293deg) brightness(118%) contrast(298%);
+}
+
 /* Media queries */
 @media(max-width:900.9px){
   .logo{
