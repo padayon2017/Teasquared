@@ -1,13 +1,13 @@
 const toggleMenu = document.querySelector('.toggle-menu');
-const sidebar = document.querySelector('.nested-menu');
+const sidebar = document.querySelector('.sidebar-menu');
 
 toggleMenu.addEventListener('click', () => {
   sidebar.classList.toggle('active');
 
   // Toggle image src
   if (sidebar.classList.contains('active')) {
-    toggleMenu.src = 'image/close.png'; // X icon
+    toggleMenu.src = 'images/close.png'; // X icon
   } else {
-    toggleMenu.src = 'image/menu-bar.png'; // Hamburger menu icon
+    toggleMenu.src = 'images/menu-bar.png'; // Hamburger menu icon
   }
 });

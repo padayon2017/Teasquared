@@ -3,64 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="image/favicons1.png">  
+  <link rel="icon" type="image/png" href="images/favicon.png">  
   <link rel="stylesheet" href="style.css">
   <title>Home</title>
 </head>
 <body>
   <header>
-    <a href="index.html" class="logo">Ana Rose Ducanes</a>
     <nav>
-      <ul>
-        <li>
-          <a href="index.html" class="links">Home</a>
-          <a href="about.html" class="links">About</a>
-          <a href="gallery.html" class="links">Gallery</a>
-          <a href="contact.html" class="links">Contact</a>
-        </li>
+      <ul class="nav-ul">
+        <li class="nav-li"><a href="index.html" class="nav-a">Home</a></li>
+        <li class="nav-li"><a href="about.html" class="nav-a">About</a></li>
+        <li class="nav-li"><a href="gallery.html" class="nav-a">Gallery</a></li>
+        <li class="nav-li"><a href="contact.html" class="nav-a">Contact</a></li>
+        <li class="nav-li"><a href="devotional.html" class="nav-a">Devotional</a></li>
       </ul>
-      <img src="image/menu-bar.png" alt="" class="toggle-menu">
+      <img src="images/menu-bar.png" alt="" class="toggle-menu">
+      <div class="sidebar-menu">
+        <a href="index.html" class="sidebar-links">Home</a>
+        <a href="about.html" class="sidebar-links">About</a>
+        <a href="gallery.html" class="sidebar-links">Gallery</a>
+        <a href="contact.html" class="sidebar-links">Contact</a>
+        <a href="devotional.html" class="sidebar-links">Devotional</a>
+      </div>
     </nav>
   </header>
-  <main>
-    <div id="content">
-        <div class="nested-menu">
-          <a href="index.html" class="nested-links">Home</a>
-          <a href="about.html" class="nested-links">About</a>
-          <a href="gallery.html" class="nested-links">Gallery</a>
-          <a href="contact.html" class="nested-links">Contact</a>
+  <main id="home">
+    <div class="details-container">
+      <h1 class="home-title">My Portfolio Website</h1>
+    </div>
+    <div class="me-container">
+      <div class="me-wrapper">
+        <img src="images/redgen.png" alt="me" class="me" id="myImage">
+        <div class="hometext-wrapper">
+          <p class="me-p1">Redgen Mie Ballon</p>
+          <p class="me-p2">Computer Science</p>
+          <p class="me-p3">"All our dreams can come true if we have the courage to pursue them."</p>
         </div>
-        
-        <h1 class="hometext">My Personal Website</h1>
-        <div class="box-img">
-          <img src="image/pictureko-removebg-preview.png" class="me">
-        </div>
-        <a href="about.html" class="click">Click Me!</a>
+      </div>
+      <div class="pet-container">
+        <img src="images/puppy.jpg" alt="" class="pet">
 
-        <img id="playPauseBtn" src="image/play.png" alt="Play/Pause">
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="home-btn" onclick="window.location.href='about.html'">Click me!</button>
+    </div>
+    <div id="lightbox" class="">
+      <img src="/images/redgen.png" alt="Expanded Image">
     </div>
   </main>
-  <div id="neon-cursor"></div>
-  
+
   <footer>
-    <div class="quickLinks-container">
-      <p>Quick Links</p>
-      <a href="index.html" class="quicklinks">Home</a>
-      <a href="about.html" class="quicklinks">About</a>
-      <a href="gallery.html" class="quicklinks">Gallery</a>
-      <a href="contact.html" class="quicklinks">Contact</a>
-    </div>
-    <div class="owner">
-      <p>Web Developer | Ana Rose Ducanes</p>
-      <p>My Facebook <a href="https://www.facebook.com/anarose.ballera.1" class="fblink" target="_blank">Ana Rose Ducanes</a></p>
-    </div>
-    <div class="footericonscont">
-      <a href="https://www.facebook.com/anarose.ballera.1" class="icons-link" target="_blank"><img src="image/fb1.png" alt="" class="footer-icons"></a>
-      <a href="https://www.instagram.com/xqxz_i19/profilecard/?igsh=MW4zMHZzOHV5NXhmbg%3D%3D" class="icons-link" target="_blank"><img src="image/ig1.png" alt="" class="footer-icons"></a>
-    </div>
+      <div class="quickLinks-container">
+        <p>Quick Links</p>
+        <a href="index.html" class="quicklinks">Home</a>
+        <a href="about.html" class="quicklinks">About</a>
+        <a href="gallery.html" class="quicklinks">Gallery</a>
+        <a href="contact.html" class="quicklinks">Contact</a>
+        <a href="devotional.html" class="quicklinks"> Devotional</a>
+      </div>
+      <div class="owner">
+        <p>Web Developer | Redgen Mie Ballon</p>
+        <p>My Facebook <a href="https://www.facebook.com/redgen.ballon" class="fblink" target="_blank">Redgen Mie Ballon</a></p>
+      </div>
+      <div class="footericonscont">
+        <a href="https://www.facebook.com/redgen.ballon" target="_blank"><img src="images/fb1.png" alt="" class="footer-icons"></a>
+      </div>
   </footer>
+  <script src="image.js"></script>
+  <script src="toggle.js"></script>
 </body>
-<script src="music.js"></script>
-<script src="toggle.js"></script>
-<script src="cursor.js"></script>
 </html>
